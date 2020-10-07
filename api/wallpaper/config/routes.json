@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/wallpapers",
+      "handler": "wallpaper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wallpapers/count",
+      "handler": "wallpaper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/wallpapers/:id",
+      "handler": "wallpaper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/wallpapers",
+      "handler": "wallpaper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/wallpapers/:id",
+      "handler": "wallpaper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/wallpapers/:id",
+      "handler": "wallpaper.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

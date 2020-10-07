@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "wallpapers",
+  "info": {
+    "name": "Wallpaper"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "TItle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Wallpaper": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
