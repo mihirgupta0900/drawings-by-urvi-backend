@@ -17,7 +17,7 @@
     "Description": {
       "type": "text"
     },
-    "Wallpaper": {
+    "Wallpaper_Pic": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
